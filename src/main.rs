@@ -84,7 +84,7 @@ fn render(
 
 fn main() {
     let matches = Command::new("transclude")
-        .version("0.1.0")
+        .version("1.0.0")
         .author("Sam Christy")
         .about("Transclude files")
         .arg(arg!(-s --start <VALUE> "The start pattern. Default: 'include{'"))
