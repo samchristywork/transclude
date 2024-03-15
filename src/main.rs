@@ -113,7 +113,7 @@ fn main() {
     let binding = String::from("dotstyle");
     let dot_style = match matches.get_one(&binding).map(|s: &String| s.to_string()) {
         Some(style) => style,
-        None => String::from("rankdir=LR;node [shape=box];"),
+        None => String::from("  rankdir=LR;\n  node [shape=box];"),
     };
 
     match matches.get_one::<String>("input") {
@@ -122,7 +122,7 @@ fn main() {
 
             match &mut dot_file {
                 Some(dot_file) => {
-                    writeln!(dot_file, "digraph G {{\n  {dot_style};").unwrap();
+                    writeln!(dot_file, "digraph G {{\n{dot_style}\n").unwrap();
                 }
                 None => {}
             }
