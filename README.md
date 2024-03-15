@@ -15,18 +15,19 @@ recursive, enabling files to include other files which in turn include other
 files.
 
 This utility can be useful in a variety of scenarios where content needs to be
-shared between multiple documents without duplicating the text.
+shared between multiple documents without duplicating the text including static
+site generators, writing modular prose, and documentation.
 
 ## Features
 
-Recursive transclusion of input files
-Configurable start and end patterns for transclusion directives
-Optional Graphviz output
-Configurable Grahviz styling
-Cycle detection
-Colored output
+- Recursive transclusion of input files
+- Configurable start and end patterns for transclusion directives
+- Optional Graphviz output
+- Configurable Grahviz styling
+- Cycle detection
+- Colored output
 
-## Installation
+## Setup
 
 Ensure that you have the Rust toolchain installed. Clone this directory,
 navigate to it, and build using cargo:
@@ -117,3 +118,9 @@ This is file 1.
 This is file 2.
 End of file 1.
 ```
+
+## License
+
+This work is licensed under the GNU General Public License version 3 (GPLv3).
+
+[<img src="https://s-christy.com/status-banner-service/GPLv3_Logo.svg" width="150" />](https://www.gnu.org/licenses/gpl-3.0.en.html)
