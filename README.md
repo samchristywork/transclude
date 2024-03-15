@@ -1,4 +1,10 @@
-# Transclude
+![Banner](https://s-christy.com/sbs/status-banner.svg?icon=editor/polyline&hue=139&title=Transclude&description=Documents%20within%20documents%20within%20documents%20within...)
+
+## Overview
+
+<p align="center">
+  <img src="./assets/sample_graph.svg" />
+</p>
 
 Transclude is a command-line program written in Rust that allows for the
 inclusion of files within other files.
