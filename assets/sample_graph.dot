@@ -1,0 +1,20 @@
+digraph G {
+  node [shape=box];
+
+  "blog" -> "header";
+  "header" -> "about";
+  "header" -> "contact";
+  "blog" -> "articles";
+  "articles" -> "article_1";
+  "article_1" -> "image_1";
+  "article_1" -> "image_2";
+  "article_1" -> "image_3";
+  "articles" -> "article_2";
+  "article_2" -> "code_snippet_1";
+  "articles" -> "article_3";
+  "articles" -> "article_4";
+  "article_4" -> "code_snippet_2";
+  "blog" -> "footer";
+  "footer" -> "copyright";
+  "footer" -> "license";
+}
